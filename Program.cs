@@ -142,3 +142,87 @@ Convert.ToInt32(Console ReadLine()); }
 
 }
 
+/* Задача 27 Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+452 -> 11;  82 -> 10;  9012 -> 12   */
+
+int number = ReadInt ("Введите число:");
+
+int len = NumberLen(number);
+SumNumbers(number,len);
+
+//Функция подсчета цифр в числе int
+NumberLen(int a) {int index = 0; while (a>0) {a/=10; index ++;} return index;}
+
+//Функция вывода суммы цифр в числе 
+
+void SumNumbers(int n, int len){int = 0;for(int i = 1; i <= len i ++) {SumNumbers += n % 10; n/=10;} 
+Console WriteLine ($"сумма цифр {Sum}");}
+
+//Функция ввода 
+
+int Readint(string message ){Console.Write(message);
+
+return Convert.ToInt32(Console.ReadLine());}
+
+
+/* Задача 29 Напишите программу, которая задаёт массив из N элементов и выводит их на экран. 5 -> [1, 2, 5, 7, 19]; 3 -> [6, 1, 33] */
+
+
+int lenArray =Readint("Введите длину массива:");
+
+int[] randomArray = new int[lenArray];
+
+for (int i = 0; i < randomArray.Length; i ++)
+{randomArray[i] = new Random().Next(1, 9);
+Console.Write(randomArray[i] +"");}
+
+//Функция ввода 
+
+int Readint(string message){Console.Write(message);
+return 
+Convert.ToInt32(Console.ReadLine()); } 
+ 
+
+
+ 
+  
+int GetSum(int num)
+{
+
+int sum = 0;
+
+  for(int current = 1; current <= num; current ++)
+{
+    sum += current;
+}
+}
+
+int current = 1;
+while(current <= num)
+{
+    sum += current; 
+    current ++;
+
+
+
+
+ return sum;
+
+
+
+ int a;
+}
+ do 
+{
+    Console.Write("input a positive number:");
+    a = Convert.ToInt32(Console.ReadLine());
+}
+while(a < 0);
+
+Console.Write("Input a positive number: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+
+int resulte = GetSum(a);
+Console.WriteLine($"Sum of elements form 1 to {a} is {result}");
+
